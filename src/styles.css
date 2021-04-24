@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+
+* {
+  --primary: #b85042;
+  --secondary: #e7e8d1;
+  --error: #ff4a4a;
+  font-family: "Oxygen", sans-serif;
+}
+.navbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: black;
+}
+
+.navbar a:hover {
+  color: var(--primary);
+  color: white;
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 2px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  margin: 3.5rem;
+}
+.footer a {
+  margin-left: 2px;
+  text-decoration: none;
+  padding: 6px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.svg {
+  margin: 2rem auto;
+}
+
+form {
+  margin: 5px auto;
+  text-align: center;
+}
+
+label input {
+  display: none;
+}
+
+label {
+  display: block;
+  width: 7rem;
+  height: 2rem;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  margin: 10px auto;
+  line-height: 30px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+label:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.output {
+  height: 60px;
+  font-size: 0.8rem;
+}
+.error {
+  color: var(--error);
+}
+
+/* progress bar styles */
+.progress-bar {
+  height: 5px;
+  background: var(--primary);
+  margin-top: 20px;
+}
+
+/* image grid styles */
+.img-grid {
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-left: 20px;
+}
+.img-wrap {
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  position: relative;
+  opacity: 0.8;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+.img-wrap img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* modal styles */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.backdrop img {
+  display: block;
+  max-width: 60%;
+  max-height: 80%;
+  margin: 60px auto;
+  box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
+}
