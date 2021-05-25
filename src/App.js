@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./components/Homepage";
 import Snap from "./components/Snap";
+import ErrorPage from "./components/ErrorPage";
 
 export default function App() {
   return (
@@ -16,6 +17,9 @@ export default function App() {
           </Route>
           <Route path="/Snap">
             <Snap />
+          </Route>
+          <Route path="*">
+            <ErrorPage />
           </Route>
         </Switch>
       </div>

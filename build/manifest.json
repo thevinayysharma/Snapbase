@@ -1,0 +1,27 @@
+{
+    "name": "Snapbase",
+    "short_name": "Snapbase",
+    "description": "A photo gallery application",
+    "icons": [
+        {
+            "src": "./logo128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "./logo192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./logo225.png",
+            "type": "image/png",
+            "sizes": "225x225"
+        }
+    ],
+    "theme_color": "#b85042",
+    "background_color": "#f7fbfe",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/?source=pwa"
+}

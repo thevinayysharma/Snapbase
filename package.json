@@ -1,7 +1,7 @@
 {
   "name": "snapbase",
   "version": "1.0.0",
-  "description": "",
+  "description": "Photo Gallery Application",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

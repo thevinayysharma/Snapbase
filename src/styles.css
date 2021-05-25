@@ -6,6 +6,10 @@
   --error: #ff4a4a;
   font-family: "Oxygen", sans-serif;
 }
+
+html {
+  overflow-x: hidden;
+}
 .navbar {
   padding: 10px;
   display: flex;
@@ -41,6 +45,7 @@
   margin: 2px auto;
   padding: 20px;
   text-align: center;
+  line-height: 1.5;
 }
 
 .footer {
@@ -61,6 +66,27 @@
 
 .svg {
   margin: 2rem auto;
+}
+
+.svg-error {
+  margin: 5rem 2rem auto ;
+  align-items: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.err-btn{
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color:white;
+  border:1px solid white;
+  font-weight: bold;
+}
+.err-btn:hover {
+  cursor: pointer;
+  transform: rotate(10deg);
 }
 
 form {
@@ -147,4 +173,11 @@ label:hover {
   margin: 60px auto;
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
   border: 3px solid white;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .content {
+     margin: auto;
+  }
 }
