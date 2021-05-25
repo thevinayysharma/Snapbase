@@ -12,7 +12,7 @@ export default function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/" activeClassName="selected">
             <HomePage />
           </Route>
           <Route path="/Snap">
